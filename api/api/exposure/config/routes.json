@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exposures",
+      "handler": "exposure.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exposures/count",
+      "handler": "exposure.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exposures/:id",
+      "handler": "exposure.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/exposures",
+      "handler": "exposure.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exposures/:id",
+      "handler": "exposure.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exposures/:id",
+      "handler": "exposure.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
