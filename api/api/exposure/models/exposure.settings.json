@@ -17,15 +17,39 @@
     "description": {
       "type": "richtext"
     },
-    "price": {
-      "type": "decimal",
-      "required": false
-    },
     "start_date": {
       "type": "date"
     },
     "end_date": {
       "type": "date"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "preview": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "artists": {
+      "collection": "artist"
     }
   }
 }
