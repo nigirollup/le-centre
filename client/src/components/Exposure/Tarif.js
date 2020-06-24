@@ -49,7 +49,7 @@ const Tarif = () => {
       </ul>
       <div className="where-btn">
         <img src={fleche} />
-        <span>nous trouver</span>
+        <span>billeterie</span>
       </div>
     </div>
   )

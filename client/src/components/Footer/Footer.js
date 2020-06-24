@@ -1,6 +1,8 @@
 import React from 'react';
 import vague from './../../assets/vague-paragraphe-white.png';
 import fleche from './../../assets/fleche-droit-white.png';
+import logoBordeaux from './../../assets/logo-bordeaux.png';
+import bdxCultureBlanc from './../../assets/bdx-culture-blanc.png';
 
 const Footer = () => {
   return (
@@ -51,16 +53,22 @@ const Footer = () => {
           <img src={fleche} />
           <span>souscrire</span>
         </div>
-        <ul>
-          <li>
-            conditions générales
+        <ul className="bottom">
+          <div>
+            <li>
+              conditions générales
           </li>
-          <li>
-            crédits
+            <li>
+              crédits
           </li>
-          <li>
-            mentions légales
+            <li>
+              mentions légales
           </li>
+          </div>
+          <div>
+            <img src={logoBordeaux}/>
+            <img src={bdxCultureBlanc}/>
+          </div>
         </ul>
       </div>
     </div>

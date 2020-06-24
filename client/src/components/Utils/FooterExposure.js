@@ -1,6 +1,7 @@
 import React from 'react';
 import fleche from './../../assets/fleche-diag.png';
 import flecheDroit from './../../assets/fleche-droit.png'; // Tell webpack this JS file uses this image
+import { Link } from 'react-router-dom';
 
 const FooterExposure = ({ exposure }) => {
   const startDate = exposure.start_date.split('-');
@@ -26,7 +27,9 @@ const FooterExposure = ({ exposure }) => {
         <span>{endDate[2]} {months[endDate[1]]} {endDate[0]}</span>
       </div>
       <div className="shop-exposure">
-        <img src={flecheDroit} /><span>billeterie</span>
+        <Link to="/billeterie">
+          <img src={flecheDroit} /><span>billeterie</span>
+        </Link>
       </div>
     </div>
   )

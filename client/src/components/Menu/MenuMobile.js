@@ -19,13 +19,15 @@ const MenuMobile = ({ openMenu, setOpenMenu }) => {
   return (
     <div className={`menu ${openMenu ? 'open-menu' : ''}`}>
       <div className="top-bar">
-        <img className="logo-img" src={logo} />
+        <Link to="/">
+          <img className="logo-img" src={logo} onClick={() => setOpenMenu(false)} />
+        </Link>
         <img className="cross-img" src={cross} onClick={() => setOpenMenu(false)} />
       </div>
       <ul className="link-menu">
-        <li className={`${pathName === '/' ? 'current-link' : ''}`} onClick={() => { setOpenMenu(false) }}>
-          <Link to="/">le centre
-          {pathName === '/' &&
+        <li className={`${pathName.startsWith('/le-centre') ? 'current-link' : ''}`} onClick={() => { setOpenMenu(false) }}>
+          <Link to="/le-centre">le centre
+          {pathName.startsWith('/le-centre') &&
               <img src={vagueLink} />
             }
           </Link>
@@ -37,9 +39,9 @@ const MenuMobile = ({ openMenu, setOpenMenu }) => {
             }
           </Link>
         </li>
-        <li className={`${pathName === '/come' ? 'current-link' : ''}`} onClick={() => { setOpenMenu(false) }}>
-          <Link to="/come">comment venir
-          {pathName === '/come' &&
+        <li className={`${pathName === '/find' ? 'current-link' : ''}`} onClick={() => { setOpenMenu(false) }}>
+          <Link to="/find">comment venir
+          {pathName === '/find' &&
               <img src={vagueLink} />
             }
           </Link>
@@ -50,8 +52,8 @@ const MenuMobile = ({ openMenu, setOpenMenu }) => {
               <img src={vagueLink} />
             }</Link>
         </li>
-        <li className="menu-last-btn">
-          <Link to="/users">billeterie</Link>
+        <li className="menu-last-btn" onClick={() => setOpenMenu(!openMenu)}>
+          <Link to="/billeterie">billeterie</Link>
         </li>
       </ul>
       <ul className="social-link">

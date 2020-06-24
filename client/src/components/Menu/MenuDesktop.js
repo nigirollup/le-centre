@@ -11,12 +11,15 @@ const MenuDesktop = ({ setOpenMenu, openMenu }) => {
   return (
     <div className="menu-desktop">
       <div className="logo-img">
-        <img src={logo} />
+        <Link to="/">
+          <img src={logo} />
+        </Link>
+
       </div>
       <ul className="link-menu">
-        <li className={`${pathName === '/' ? 'current-link' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
-          <Link to="/">le centre
-      {pathName === '/' &&
+        <li className={`${pathName.startsWith('/le-centre') ? 'current-link' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
+          <Link to="/le-centre">le centre
+      {pathName.startsWith('/le-centre') &&
               <img src={vagueLink} />
             }
           </Link>
@@ -28,9 +31,9 @@ const MenuDesktop = ({ setOpenMenu, openMenu }) => {
             }
           </Link>
         </li>
-        <li className={`${pathName === '/come' ? 'current-link' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
-          <Link to="/come">comment venir
-      {pathName === '/come' &&
+        <li className={`${pathName === '/find' ? 'current-link' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
+          <Link to="/find">comment venir
+      {pathName === '/find' &&
               <img src={vagueLink} />
             }
           </Link>
@@ -42,7 +45,7 @@ const MenuDesktop = ({ setOpenMenu, openMenu }) => {
             }</Link>
         </li>
         <li className="menu-last-btn" onClick={() => setOpenMenu(!openMenu)}>
-          <Link to="/users">billeterie</Link>
+          <Link to="/billeterie">billeterie</Link>
         </li>
       </ul>
     </div >

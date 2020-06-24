@@ -14,6 +14,11 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Event from './components/Exposure/Event';
 import Exposures from './components/Exposures/Exposures';
+import FindUs from './components/FindUs/FindUs';
+import Billeterie from './components/Billeterie/Billeterie';
+import FunFact from './components/Funfact/Funfact';
+import FooterDesktop from './components/Footer/FooterDesktop';
+import LeCentre from './components/LeCentre/LeCentre';
 
 
 const strapi = new Strapi('http://localhost:1337');
@@ -82,14 +87,37 @@ const App = () => {
                 currentExposure={currentExposure}
                 nextExposure={nextExposure}
                 exposures={exposures}
+                screenSize={screenSize}
               />
             </Route>
             <Route path="/events/:id" exact={true}>
-              <Event />
+              <Event
+                screenSize={screenSize}
+              />
+            </Route>
+            <Route path="/find" exact={true}>
+              <FindUs />
+            </Route>
+            <Route path="/billeterie" exact={true}>
+              <Billeterie
+                screenSize={screenSize}
+              />
+            </Route>
+            <Route path="/fun-fact/:id" exact={true}>
+              <FunFact
+                screenSize={screenSize}
+              />
+            </Route>
+            <Route path="/le-centre" exact={true}>
+              <LeCentre
+                screenSize={screenSize}
+              />
             </Route>
           </Switch>
-
-          <Footer />
+          {screenSize >= 840 ?
+            <FooterDesktop /> :
+            <Footer />
+          }
         </div>
       </div>
     </Router>
