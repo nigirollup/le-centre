@@ -4,10 +4,10 @@ import {
 } from "react-router-dom";
 import logo from './../../assets/logo.png';
 import cross from './../../assets/cross.png';
-import igLogo from './../../assets/ig.png';
-import fbLogo from './../../assets/fb.png';
-import ytLogo from './../../assets/yt.png';
-import vague from './../../assets/vague-paragraphe.png';
+import igLogo from './../../assets/ig.svg';
+import fbLogo from './../../assets/fb.svg';
+import ytLogo from './../../assets/yt.svg';
+import vague from './../../assets/vague-paragraphe.svg';
 import vagueLink from './../../assets/vague-lien.png';
 
 

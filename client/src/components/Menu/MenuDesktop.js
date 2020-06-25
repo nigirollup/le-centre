@@ -19,29 +19,33 @@ const MenuDesktop = ({ setOpenMenu, openMenu }) => {
       <ul className="link-menu">
         <li className={`${pathName.startsWith('/le-centre') ? 'current-link' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
           <Link to="/le-centre">le centre
-      {pathName.startsWith('/le-centre') &&
-              <img src={vagueLink} />
+      {pathName.startsWith('/le-centre') ?
+              <img src={vagueLink} /> :
+              <img className="hover" src={vagueLink} />
             }
           </Link>
         </li>
         <li className={`${pathName.startsWith('/events') ? 'current-link' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
           <Link to="/events">évènements
-      {pathName.startsWith('/events') &&
-              <img src={vagueLink} />
+      {pathName.startsWith('/events') ?
+              <img src={vagueLink} /> :
+              <img className="hover" src={vagueLink} />
             }
           </Link>
         </li>
         <li className={`${pathName === '/find' ? 'current-link' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
           <Link to="/find">comment venir
-      {pathName === '/find' &&
-              <img src={vagueLink} />
+      {pathName === '/find' ?
+              <img src={vagueLink} /> :
+              <img className="hover" src={vagueLink} />
             }
           </Link>
         </li>
         <li className={`${pathName === '/contact' ? 'current-link' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
           <Link to="/contact">contact
-      {pathName === '/contact' &&
-              <img src={vagueLink} />
+      {pathName === '/contact' ?
+              <img src={vagueLink} /> :
+              <img className="hover" src={vagueLink} />
             }</Link>
         </li>
         <li className="menu-last-btn" onClick={() => setOpenMenu(!openMenu)}>
