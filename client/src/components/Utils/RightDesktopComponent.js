@@ -1,5 +1,5 @@
 import React from 'react';
-import fleche from './../../assets/fleche-diag.png';
+import fleche from './../../assets/fleche-diag.svg';
 
 
 const RightDesktopComponent = () => {

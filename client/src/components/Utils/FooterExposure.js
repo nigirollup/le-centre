@@ -1,5 +1,5 @@
 import React from 'react';
-import fleche from './../../assets/fleche-diag.png';
+import fleche from './../../assets/fleche-diag.svg';
 import flecheDroit from './../../assets/fleche-droit.png'; // Tell webpack this JS file uses this image
 import { Link } from 'react-router-dom';
 
