@@ -1,6 +1,6 @@
 import React from 'react';
-import vague from './../../assets/vague-paragraphe.png';
-import fleche from './../../assets/fleche-diag.png';
+import vague from './../../assets/vague-paragraphe.svg';
+import fleche from './../../assets/fleche-diag.svg';
 
 
 const FunFact = () => {
