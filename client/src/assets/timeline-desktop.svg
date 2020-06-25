@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="315px" viewBox="0 0 13 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>timeline-desktop</title>
+    <defs>
+        <polygon id="path-1" points="0 0 13 0 13 13 0 13"></polygon>
+        <polygon id="path-3" points="0 0 13 0 13 13 0 13"></polygon>
+        <polygon id="path-5" points="0 0 13 0 13 13 0 13"></polygon>
+    </defs>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lecentre-leCentre_desktop" transform="translate(-139.000000, -1926.000000)">
+            <g id="timeline-desktop" transform="translate(139.000000, 1926.000000)">
+                <line x1="6.23245615" y1="6" x2="6.73245615" y2="311.5" id="Path-2" stroke="#1D1D1B" stroke-width="3"></line>
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M6.38060582,0 C2.83702686,0.114647246 0,2.97978299 0,6.4979917 C0,10.0889393 2.95543416,13 6.6011834,13 C9.68528471,13 12.275144,10.9166884 13,8.10096232 L6.38060582,0 Z" id="Fill-1" fill="#1D1D1B" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-3-Copy" transform="translate(0.000000, 162.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M6.38060582,0 C2.83702686,0.114647246 0,2.97978299 0,6.4979917 C0,10.0889393 2.95543416,13 6.6011834,13 C9.68528471,13 12.275144,10.9166884 13,8.10096232 L6.38060582,0 Z" id="Fill-1" fill="#1D1D1B" mask="url(#mask-4)"></path>
+                </g>
+                <g id="Group-3-Copy-2" transform="translate(0.000000, 302.000000)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M6.38060582,0 C2.83702686,0.114647246 0,2.97978299 0,6.4979917 C0,10.0889393 2.95543416,13 6.6011834,13 C9.68528471,13 12.275144,10.9166884 13,8.10096232 L6.38060582,0 Z" id="Fill-1" fill="#1D1D1B" mask="url(#mask-6)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
