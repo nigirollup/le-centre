@@ -21,10 +21,12 @@ import FooterDesktop from './components/Footer/FooterDesktop';
 import LeCentre from './components/LeCentre/LeCentre';
 
 
-const strapi = new Strapi('http://localhost:1337');
+const strapi = new Strapi('https://le-centre-api.herokuapp.com');
 
 
 const App = () => {
+
+
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
   const [openMenu, setOpenMenu] = useState(false)
@@ -38,12 +40,35 @@ const App = () => {
     fetchExposures();
   }, [])
 
+
   const updateWindowDimensions = () => {
     setScreenSize(window.innerWidth);
   }
+
+  const stickyManager = () => {
+    let footer = document.getElementsByClassName("footer-desktop")[0];
+    let stickyDiv = document.getElementsByClassName('sticky-home')[0];
+    if (footer && stickyDiv) {
+      if (((footer.offsetTop - window.scrollY) >= 600) && stickyDiv.style.position !== 'fixed') {
+        stickyDiv.style.position = 'fixed'
+        stickyDiv.style.top = 'auto'
+      } else {
+        if (stickyDiv.style.position !== 'absolute') {
+          stickyDiv.style.position = 'absolute'
+          stickyDiv.style.top = window.scrollY + 'px'
+        }
+      }
+    }
+  }
   useEffect(() => {
     window.addEventListener("resize", updateWindowDimensions);
+    window.addEventListener("scroll", stickyManager);
+
   }, [])
+
+  useEffect(() => {
+
+  })
 
   if (exposures.length === 0) return '';
 
