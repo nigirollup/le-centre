@@ -1,10 +1,13 @@
-import React from 'react';
-import vague from './../../assets/vague-paragraphe.png';
+import React, { useEffect } from 'react';
+import vague from './../../assets/vague-paragraphe.svg';
 import map from './../../assets/map.png';
 import fleche from './../../assets/fleche-droit.png';
 
 
 const FindUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
   return (
     <div className="find-us">
       <p className="title-find">

@@ -1,10 +1,14 @@
-import React from 'react';
-import vague from './../../assets/vague-paragraphe.png';
-import fleche from './../../assets/fleche-diag.png';
+import React, { useEffect } from 'react';
+import vague from './../../assets/vague-paragraphe.svg';
+import fleche from './../../assets/fleche-diag.svg';
 import flecheDroit from './../../assets/fleche-droit.png';
 
 
 const Billeterie = ({ screenSize }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   return (
     <div className="billeterie">
       <p className="title">
@@ -21,13 +25,35 @@ const Billeterie = ({ screenSize }) => {
               africa 2020
             </p>
             <div className="date-exposure">
-              <img src={fleche} /> <span>01 FÉVRIER 2021 </span>
-              <span>30 AVRIL 2021</span>
+              <div className="top-block">
+                <img src={fleche} />
+                <div>
+                  {screenSize <= 840 ?
+                    <>
+                      <p>01 FÉVRIER 2021</p>
+                      <p>30 AVRIL 2021</p>
+                    </>
+                    :
+                    <>
+                      <p>01 FÉVRIER 2021 au 30 AVRIL 2021</p>
+                    </>
+                  }
+
+                </div>
+              </div>
+              {screenSize > 840 &&
+                <p className="description">
+                  Projet panafricain et pluridisciplinaire, centré sur l'innovation dans les arts, les sciences, les technologies, l'entrepreneuriat et l'économie.
+            </p>
+              }
             </div>
           </div>
-          <p className="description">
-            Projet panafricain et pluridisciplinaire, centré sur l'innovation dans les arts, les sciences, les technologies, l'entrepreneuriat et l'économie.
-          </p>
+          {screenSize <= 840 &&
+            <p className="description">
+              Projet panafricain et pluridisciplinaire, centré sur l'innovation dans les arts, les sciences, les technologies, l'entrepreneuriat et l'économie.
+            </p>
+          }
+
           <div className="bottom">
             <div className="price">
               {screenSize <= 840 &&
@@ -43,6 +69,7 @@ const Billeterie = ({ screenSize }) => {
           </div>
         </li>
       </ul>
+
       <ul className="information">
         <li>
           <div className="time">
@@ -51,16 +78,38 @@ const Billeterie = ({ screenSize }) => {
           </div>
           <div className="title-group">
             <p className="title-event">
-              africa 2020
+              bienvenue 2021
             </p>
             <div className="date-exposure">
-              <img src={fleche} /> <span>01 FÉVRIER 2021 </span>
-              <span>30 AVRIL 2021</span>
+              <div className="top-block">
+                <img src={fleche} />
+                <div>
+                  {screenSize <= 840 ?
+                    <>
+                      <p>25 MARS 2021</p>
+                      <p>30 AVRIL 2021</p>
+                    </>
+                    :
+                    <>
+                      <p>25 MARS 2021 au 30 AVRIL 2021</p>
+                    </>
+                  }
+
+                </div>
+              </div>
+              {screenSize > 840 &&
+                <p className="description">
+                  Description non disponible actuellement.
+            </p>
+              }
             </div>
           </div>
-          <p className="description">
-            Projet panafricain et pluridisciplinaire, centré sur l'innovation dans les arts, les sciences, les technologies, l'entrepreneuriat et l'économie.
-          </p>
+          {screenSize <= 840 &&
+            <p className="description">
+              Description non disponible actuellement.
+            </p>
+          }
+
           <div className="bottom">
             <div className="price">
               {screenSize <= 840 &&
@@ -76,6 +125,25 @@ const Billeterie = ({ screenSize }) => {
           </div>
         </li>
       </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   )
 }
