@@ -7,7 +7,7 @@ import Exposure from './Exposure';
 import Artist from './Artist';
 import Tarif from './Tarif';
 import RightDesktopComponent from '../Utils/RightDesktopComponent';
-const strapi = new Strapi('http://localhost:1337');
+const strapi = new Strapi('https://le-centre-api.herokuapp.com');
 
 const Event = ({ screenSize }) => {
   const [exposure, setExposure] = useState(undefined);
@@ -21,6 +21,10 @@ const Event = ({ screenSize }) => {
     }
     fetchExposure();
   }, [])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   if (!exposure) return '';
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import vague from './../../assets/vague-paragraphe.png';
-import fleche from './../../assets/fleche-gauche.png';
+import vague from './../../assets/vague-paragraphe.svg';
+import fleche from './../../assets/fleche-droit.svg';
 
 const Tarif = () => {
   return (

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Exposure from './Exposure';
 import RightDesktopComponent from '../Utils/RightDesktopComponent';
 
 const Exposures = ({ currentExposure, nextExposure, exposures, screenSize }) => {
-  console.log(screenSize);
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
   return (
     <>
       {screenSize >= 840 ?

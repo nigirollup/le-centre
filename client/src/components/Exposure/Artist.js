@@ -2,7 +2,7 @@ import React from 'react';
 import avatar from './../../assets/avatar.png';
 
 const Artist = ({ artists }) => {
-  const backUrl = 'http://localhost:1337';
+  const backUrl = 'https://le-centre-api.herokuapp.com';
   return (
     <div className="artist">
       <p className="title-exposure">

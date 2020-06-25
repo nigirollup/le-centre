@@ -1,6 +1,6 @@
 import React from 'react';
-import vague from './../../assets/vague-paragraphe.png';
-import fleche from './../../assets/fleche-diag.png';
+import vague from './../../assets/vague-paragraphe.svg';
+import fleche from './../../assets/fleche-diag.svg';
 import pastille from './../../assets/pastille.png'; // Tell webpack this JS file uses this image
 import flecheDroit from './../../assets/fleche-droit.png'; // Tell webpack this JS file uses this image
 import {
@@ -9,7 +9,7 @@ import {
 import FooterExposure from '../Utils/FooterExposure';
 
 const Exposure = ({ exposure, title }) => {
-  const backUrl = 'http://localhost:1337';
+  const backUrl = 'https://le-centre-api.herokuapp.com';
   return (
     <div className="exposures">   
       <p>{title}</p>

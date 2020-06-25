@@ -2,13 +2,13 @@ import React from 'react';
 import FooterExposure from '../Utils/FooterExposure';
 import logoEvent from './../../assets/africa-logo-2020.png';
 import center from './../../assets/001.png'; // Tell webpack this JS file uses this image
-import fleche from './../../assets/fleche-diag.png';
-import flecheGauche from './../../assets/fleche-gauche.png';
+import fleche from './../../assets/fleche-diag.svg';
+import flecheGauche from './../../assets/fleche-gauche.svg';
 import flecheDroit from './../../assets/fleche-droit.png';
 
 
 const Exposure = ({ exposure }) => {
-  const backUrl = 'http://localhost:1337';
+  const backUrl = 'https://le-centre-api.herokuapp.com';
   return (
     <div className="exposure">
       <div className="header-exposure">
