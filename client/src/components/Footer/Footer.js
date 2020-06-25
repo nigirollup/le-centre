@@ -1,6 +1,6 @@
 import React from 'react';
-import vague from './../../assets/vague-paragraphe-white.png';
-import fleche from './../../assets/fleche-droit-white.png';
+import vague from './../../assets/vague-paragraphe-white.svg';
+import fleche from './../../assets/fleche-droit-white.svg';
 import logoBordeaux from './../../assets/logo-bordeaux.png';
 import bdxCultureBlanc from './../../assets/bdx-culture-blanc.png';
 

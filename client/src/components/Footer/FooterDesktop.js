@@ -1,6 +1,8 @@
 import React from 'react';
-import vague from './../../assets/vague-paragraphe-white.png';
-import fleche from './../../assets/fleche-diag-white.png';
+import vague from './../../assets/vague-paragraphe-white.svg';
+import fleche from './../../assets/fleche-diag-white.svg';
+import fleche2 from './../../assets/fleche-copy-2.svg';
+
 import logoBordeaux from './../../assets/logo-bordeaux.png';
 import bdxCultureBlanc from './../../assets/bdx-culture-blanc.png';
 import igLogo from './../../assets/ig-w.png';
@@ -31,19 +33,19 @@ const FooterDesktop = () => {
           <p>
             Inscrivez-vous pour recevoir notre newsletter et restez informé sur nos prochaines expositions.
           </p>
-          <p><input type="text" /></p>
+          <p><input type="text" placeholder="adresse e-mail"/></p>
           <p> <img src={fleche} /><span>souscrire</span></p>
         </div>
         <div className="right-footer">
           <div>
             <p className="horraire">
-              <img src={fleche} /> <span>HORAIRES</span>
+              <img src={fleche2} /> <span>HORAIRES</span>
             </p>
             <p>Lundi - fermé</p>
             <p>Mardi à dimanche</p>
             <p>13h30 à 19h</p>
             <p className="horraire">
-              <img src={fleche} /> <span>ADRESSE</span>
+              <img src={fleche2} /> <span>ADRESSE</span>
             </p>
             <p>Le Centre</p>
             <p>Base Sous-Marine</p>
